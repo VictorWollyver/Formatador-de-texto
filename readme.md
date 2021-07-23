@@ -9,7 +9,7 @@ Pesquisei sobre a ideia e vi que ja existia diversos projetos com a mesma ideia,
 
 <b> Projeto finalizado! </b>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/246be27f-aa89-49c4-b23d-17fd7f886a72/deploy-status)](https://app.netlify.com/sites/formatador-de-texto/deploys)
+[[![Netlify Status](https://api.netlify.com/api/v1/badges/246be27f-aa89-49c4-b23d-17fd7f886a72/deploy-status)](https://app.netlify.com/sites/formatador-de-texto/deploys)
 
 ### Tecnologias Utilizadas
 
