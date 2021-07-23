@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/Interaction.js"></script>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>Formatador de Texto</title>
+</head>
+<body>
+   
+    <main>
+        <section id="content">
+            <h1>Copie e cole seu texto</h1>
+            <textarea name="textarea" id="text" cols="30"  placeholder="Digite Aqui..." ></textarea>
+            <div id="buttons">
+                <button onclick="upper('')">Maiúsculas</button>
+                <button onclick="lower('')">Minúsculas</button>
+                <button onclick="lengt('')">Contar Caracteres</button>
+                <button id="btncopy" onclick="copy('')" >
+                    <img id="clipboard" src="assets/img/clipboard.svg"  alt="Img Copiar">
+                    <a>Copiar</a> 
+                </button> 
+            </div>
+        </section>
+        <footer>
+            <p>By: Victor</p>
+        </footer>
+    </main>
+
+    <script type="text/javascript">
+    function copy() {
+        
+        const textInput = document.getElementById('text');
+        const copyButton = document.getElementById('btncopy');
+    
+        copyButton.addEventListener('click', ()=> {
+        textInput.select();
+        document.execCommand('copy');
+        });
+
+        document.getElementById ("clipboard").src = ("assets/img/clipboard-check.svg");
+        setTimeout(timeimg, 2000 );
+            
+        } 
+      </script>
+      
+</body>
+</html>
